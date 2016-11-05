@@ -1,0 +1,18 @@
+{
+  "name": "build-process",
+  "description": "Example build process",
+  "main": "index.js",
+  "authors": [
+    "Tim Meeuwissen"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/timmeeuwissen/build-process",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

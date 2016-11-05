@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "public/js/app.js",
+        "sourceMap": true,
+        "target": "es3"
+    },
+    "files": [
+        "ts/app.ts"
+    ]
+}
