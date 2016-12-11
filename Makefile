@@ -1,4 +1,4 @@
-.PHONY: all clean get-deps build build-js build-css
+.PHONY: all clean get-deps build build-js build-css test tdd
 
 all: get-deps build
 
@@ -22,4 +22,10 @@ build-css:
 
 serve: 
 	node_modules/.bin/static-server -i index.htm public 
+
+test:
+	node_modules/.bin/karma start --single-run
+
+tdd:
+	node_modules/.bin/karma start
 
