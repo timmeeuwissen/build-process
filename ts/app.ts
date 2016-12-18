@@ -4,6 +4,10 @@ import IConfig from "./i_config"
 
 let config = <IConfig>require("../conf/app.json");
 
+interface Window {
+  TodoList: TodoListController
+}
+
 window.onload = () => {
-  document.body.innerHTML = config.color;
+  window['TodoList'] = new TodoListController(config);
 }

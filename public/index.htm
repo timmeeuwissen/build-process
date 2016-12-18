@@ -8,7 +8,26 @@
 </head>
 
 <body>
-  JS not loaded
+  <div class="todolist">
+    <script src="js/app.js" type="text/x-template" data-template-name="list">
+      <ul>
+        <% _.each(data.items, (item) => {
+          %>
+          <li> <%- item.subject %> </li>
+          <%
+        });
+      </ul>
+    </script>
+
+    <div class="todolist-new">
+      <form method="post">
+        <input type="text" placeholder="New todo item" name="new" />
+      </form>
+    </div>
+    
+    <div class="todolist-items">
+    </div>
+  </div>
 </body>
 
 </html>
