@@ -1,4 +1,10 @@
 {
   "name": "build-process",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "cucumber": "registry:dt/cucumber#0.0.0+20161119044246"
+  },
+  "globalDevDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160926213833"
+  }
 }
