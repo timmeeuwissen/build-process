@@ -1,4 +1,4 @@
-.PHONY: all clean get-deps build build-js build-css test tdd
+.PHONY: all clean get-deps build build-js build-css test tdd bdd
 
 all: get-deps build
 
@@ -17,7 +17,7 @@ build: build-js build-css
 build-js: 
 	node_modules/.bin/browserify -p [ tsify --target es3 ] ts/app.ts \
 		| java -jar node_modules/google-closure-compiler/compiler.jar --create_source_map public/js/app.map --source_map_format=V3 --js_output_file public/js/app.js
-build-css: 
+build-css:
 	helpers/build_css.sh sass public/css
 
 serve: 
@@ -25,7 +25,10 @@ serve:
 
 test:
 	node_modules/.bin/karma start --single-run
+	node_modules/.bin/chimp chimp.conf.js --chrome
 
 tdd:
 	node_modules/.bin/karma start
 
+bdd:
+	node_modules/.bin/chimp chimp.conf.js --watch
