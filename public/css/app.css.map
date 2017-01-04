@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,SACK,CACH,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,IAAI,CACjB,gBAAgB,CCLV,IAAI,CDMV,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,IAAI",
+"mappings": "AAAA,SACK,CACH,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,IAAI,CACjB,gBAAgB,CCLV,KAAK,CDMX,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,IAAI",
 "sources": ["../../sass/partials/_example.scss","../../conf/app.json"],
 "names": [],
 "file": "app.css"
